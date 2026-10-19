@@ -1,0 +1,20 @@
+[project]
+name = "text-tospeech-chatterbox-tts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "litherboar", email = "juanesgonzales7@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "chatterbox-tts>=0.1.7",
+    "setuptools<82",
+]
+
+[project.scripts]
+text-tospeech-chatterbox-tts = "text_tospeech_chatterbox_tts:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
